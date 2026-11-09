@@ -1,0 +1,35 @@
+[project]
+name = "iron-and-snow"
+version = "0.1.0"
+description = "A story-driven Battle of the Bastards fan game and Codex SDK NPC experiment"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "edge-tts>=7.3.1",
+    "openai-codex>=0.167.0",
+    "pyaudio>=0.2.14",
+    "pygame-ce>=2.5.8",
+    "speechrecognition>=3.17.0",
+]
+
+[dependency-groups]
+voice-gpu = [
+    "av<19",
+    "faster-whisper==1.2.1",
+    "kokoro-onnx[gpu]==0.6.1",
+    "msvc-runtime>=14.44; sys_platform == 'win32'",
+    "nvidia-cublas-cu12==12.9.2.10",
+    "nvidia-cudnn-cu12==9.28.1.4",
+    "nvidia-cuda-runtime-cu12==12.9.79",
+    "nvidia-cufft-cu12==11.4.1.4",
+    "nvidia-curand-cu12==10.3.10.19",
+    "nvidia-nvjitlink-cu12==12.9.86",
+    "soundfile>=0.13",
+]
+
+[project.scripts]
+iron-and-snow = "iron_and_snow:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"

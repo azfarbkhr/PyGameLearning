@@ -1,0 +1,7 @@
+{
+  "name": "iron-and-snow-reel",
+  "private": true,
+  "description": "4:5 HTML/GSAP reel pipeline inspired by Claude Animation Skills",
+  "scripts": {"render": "node render.mjs"},
+  "dependencies": {"gsap": "^3.15.1", "playwright": "^1.65.0"}
+}

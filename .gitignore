@@ -1,3 +1,6 @@
 .venv/
 __pycache__/
 *.pyc
+save/
+showcase/reel/node_modules/
+tmp/

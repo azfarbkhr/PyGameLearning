@@ -89,7 +89,6 @@ walking_frames = load_frames(walking_sprite_sheet, WALKING_SPRITE_COLUMNS, WALKI
 idle_frames = load_frames(idle_sprite_sheet, IDLE_SPRITE_COLUMNS, IDLE_SPRITE_WIDTH, IDLE_SPRITE_HEIGHT)
 attack_frames = load_frames(attack_sprite_sheet, ATTACK_SPRITE_COLUMNS, ATTACK_SPRITE_WIDTH, ATTACK_SPRITE_HEIGHT)
 slime_frames = load_frames(slime_sprite_sheet, SLIME_SPRITE_COLUMNS, SLIME_SPRITE_WIDTH, SLIME_SPRITE_HEIGHT, 3, SLIME_SPRITE_ROWS)
-
 # Obstacles
 def generate_obstacles():
     obstacles = []
@@ -99,6 +98,7 @@ def generate_obstacles():
         while True:
             obstacle_rect = obstacle_image.get_rect(topleft=(random.randint(100, 700), random.randint(100, 500)))
             if not obstacle_rect.colliderect(player.rect):
+                # mask = pygame.mask.from_surface(obstacle_image)
                 obstacles.append((obstacle_image, obstacle_rect))
                 break
     return obstacles

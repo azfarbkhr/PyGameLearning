@@ -1,0 +1,140 @@
+[
+  {
+    "source": "src/iron_and_snow/assets/winterfell_battlefield_panorama.png",
+    "copy": "source-copies/src/iron_and_snow/assets/winterfell_battlefield_panorama.png",
+    "sha256": "62cfd7b8b6953358975a7df549746ab68329bc2ab77082a392d09c20e27cc7b8",
+    "size": [
+      2172,
+      724
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/winterfell_battlefield.png",
+    "copy": "source-copies/src/iron_and_snow/assets/winterfell_battlefield.png",
+    "sha256": "167331724f2de5aa051e0cac9e52252de8907027bda82fb72254c6f0bd8d12bb",
+    "size": [
+      1672,
+      941
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/jon_snow.png",
+    "copy": "source-copies/src/iron_and_snow/assets/jon_snow.png",
+    "sha256": "5cdef6829b56e3fd8835a103cc02d0e117ce46a4faffba2bc7adfed02e27f466",
+    "size": [
+      1122,
+      1402
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/ramsay_bolton.png",
+    "copy": "source-copies/src/iron_and_snow/assets/ramsay_bolton.png",
+    "sha256": "d0477817a4c83f7c3fe04db41789fe03391739d5bdd259fc934b1b91bbb1da9a",
+    "size": [
+      1199,
+      1312
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/sprites/jon_snow_sheet.png",
+    "copy": "source-copies/src/iron_and_snow/assets/sprites/jon_snow_sheet.png",
+    "sha256": "5e8b2e3c17c43749ba348b751bb8d45590261f506671aa4db116ff51b70d5952",
+    "size": [
+      1374,
+      1145
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/sprites/sansa_archer_sheet.png",
+    "copy": "source-copies/src/iron_and_snow/assets/sprites/sansa_archer_sheet.png",
+    "sha256": "410338f901af225e6cb209906ebaaf743a38c08a566263d82c5f4283fc2ad82e",
+    "size": [
+      1374,
+      1145
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/sprites/tormund_giantsbane_sheet.png",
+    "copy": "source-copies/src/iron_and_snow/assets/sprites/tormund_giantsbane_sheet.png",
+    "sha256": "a356dabc4f8253e4788ca3bea33bd26a68af18cbf43427037bba9ea3655eddb2",
+    "size": [
+      1374,
+      1145
+    ]
+  },
+  {
+    "source": "src/iron_and_snow/assets/sprites/wun_wun_sheet.png",
+    "copy": "source-copies/src/iron_and_snow/assets/sprites/wun_wun_sheet.png",
+    "sha256": "4cc16779d004663f7470cbcd25a96ee26f0dd75a588ef8be760cf9f854330dae",
+    "size": [
+      1374,
+      1145
+    ]
+  },
+  {
+    "source": "save/showcase-check/council.png",
+    "copy": "source-copies/save/showcase-check/council.png",
+    "sha256": "3cd3beb9251c0c984cb1e39d296cbfffa413c43a0ad8d91a5b58ef237c0df0f4",
+    "size": [
+      1100,
+      700
+    ]
+  },
+  {
+    "source": "save/showcase-check/council-recorded-live-reply.png",
+    "copy": "source-copies/save/showcase-check/council-recorded-live-reply.png",
+    "sha256": "2074b8e73accd743f8953b224441260c980866c80a1878afab9bf92d24e7e65d",
+    "size": [
+      1100,
+      700
+    ]
+  },
+  {
+    "source": "save/showcase-check/conversation.png",
+    "copy": "source-copies/save/showcase-check/conversation.png",
+    "sha256": "5807d2134be2318ccc927c7b6cc45197d70386b878b7677fdaae1b2d40472f2e",
+    "size": [
+      1100,
+      700
+    ]
+  },
+  {
+    "source": "save/showcase-check/battle.png",
+    "copy": "source-copies/save/showcase-check/battle.png",
+    "sha256": "52fcb5e6e845c329941bc0ad54b70199f9834b4b7d55c61134d314b3fda58ecc",
+    "size": [
+      1100,
+      700
+    ]
+  },
+  {
+    "source": "save/showcase-check/live-conversation-report.json",
+    "copy": "source-copies/save/showcase-check/live-conversation-report.json",
+    "sha256": "5993ab1ed5f873cfb9576129898df1e4801a238d1347d7e2464b4c90da2964ed"
+  },
+  {
+    "source": "save/showcase-check/live-codex-report.json",
+    "copy": "source-copies/save/showcase-check/live-codex-report.json",
+    "sha256": "77d6308a83aac0a1f69bcb721128610af3445ba141d81e1cf250518607598923"
+  },
+  {
+    "source": "save/showcase-check/performance.json",
+    "copy": "source-copies/save/showcase-check/performance.json",
+    "sha256": "f3b4f2f5a21b079db83a0ae40130a179834d0f7097e5ae43c38a110da3aeb55e"
+  },
+  {
+    "source": "src/iron_and_snow/check_showcase.py",
+    "copy": "source-copies/src/iron_and_snow/check_showcase.py",
+    "sha256": "001c74811053cd7d34d43116ed19639418757f224f69c840d7056b13fbd3d9aa"
+  },
+  {
+    "source": "README.md",
+    "copy": "source-copies/README.md",
+    "sha256": "5958a668ade62176923730737376376bd3e49527fd6bde680eaf4c91f6e81cab"
+  },
+  {
+    "source": "TICKETS.md",
+    "copy": "source-copies/TICKETS.md",
+    "sha256": "0be9ec312b414ba4e42c91857ce47dcc1a75dd87278865aaabe3b0d2b7c6d80d"
+  }
+]
