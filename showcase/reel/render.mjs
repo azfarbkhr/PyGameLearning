@@ -7,6 +7,8 @@ import { fileURLToPath, pathToFileURL } from 'node:url';
 const root = path.dirname(fileURLToPath(import.meta.url));
 const frames = path.join(root, 'tmp', 'frames');
 const output = path.join(root, 'output', 'iron-and-snow-reel-silent.mp4');
+const audio = path.join(root, 'assets', 'voiceover-clean.wav');
+const finalOutput = path.join(root, 'output', 'iron-and-snow-reel-with-audio.mp4');
 const python = path.resolve(root, '..', '..', '.venv', 'Scripts', 'python.exe');
 const chrome = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const fps = 30;
@@ -36,7 +38,21 @@ try {
   const args = ['-y', '-hide_banner', '-loglevel', 'warning', '-framerate', String(fps), '-i', path.join(frames, '%06d.jpg'), '-an', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', output];
   const result = spawnSync(ffmpeg, args, { stdio: 'inherit' });
   if (result.status !== 0) throw new Error(`ffmpeg exited with ${result.status}`);
-  console.log(JSON.stringify({ output, seconds, frames: total, fps, width: 1080, height: 1350, bytes: (await stat(output)).size }, null, 2));
+  let audioAdded = false;
+  try {
+    await stat(audio);
+    const muxArgs = ['-y', '-hide_banner', '-loglevel', 'warning', '-i', output, '-i', audio,
+      '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '128k',
+      '-movflags', '+faststart', finalOutput];
+    const mux = spawnSync(ffmpeg, muxArgs, { stdio: 'inherit' });
+    if (mux.status !== 0) throw new Error(`ffmpeg audio mux exited with ${mux.status}`);
+    audioAdded = true;
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error;
+  }
+  console.log(JSON.stringify({ output: audioAdded ? finalOutput : output, silent_output: output,
+    audio_added: audioAdded, seconds, frames: total, fps, width: 1080, height: 1350,
+    bytes: (await stat(audioAdded ? finalOutput : output)).size }, null, 2));
 } finally {
   await browser.close();
 }
